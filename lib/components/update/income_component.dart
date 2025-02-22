@@ -245,12 +245,17 @@ class UpdateIncome extends StatelessWidget {
                       ? ElevatedButton(
                           onPressed: () {
                             oc.getUpdated();
-                            TimeOfDay t = TimeOfDay.now();
+                            
                             data.amount = int.parse(uAMtIncomeController.text);
                             data.description = uDescIncomeController.text;
+                            if (income.date != null && income.mode != null) {
+                              data.date = income.date;
+                              data.mode = income.mode;
+                            }
+                            TimeOfDay t = TimeOfDay.now();
                             data.date = income.date;
                             data.mode = income.mode;
-                            data.time = "${t.hour / t.minute}";
+                            data.time = "${t.hour}:${t.minute}";
 
                             IncomeModal modal = IncomeModal(
                                 amount: data.amount,
@@ -259,16 +264,15 @@ class UpdateIncome extends StatelessWidget {
                                 description: data.description,
                                 mode: data.mode,
                                 time: data.time);
-                            
+
                             RecentModal rm = RecentModal(
-                              amount: data.amount,
-                              date: data.date,
-                              description: data.description,
-                              id: data.id,
-                              mode: data.mode,
-                              time: data.time,
-                              type: "Income"
-                            );
+                                amount: data.amount,
+                                date: data.date,
+                                description: data.description,
+                                id: data.id,
+                                mode: data.mode,
+                                time: data.time,
+                                type: "Income");
                             income.updateIncome(modal: modal);
                             rtc.updateRecentTransaction(rm);
                           },

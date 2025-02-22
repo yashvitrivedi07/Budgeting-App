@@ -396,6 +396,14 @@ class AddComponent extends StatelessWidget {
                                               type: "Expense");
 
                                           rtc.addRecentTransaction(tm);
+
+                                          descController.clear();
+                                          amtController.clear();
+                                          controller.category = null;
+                                          controller.categoryImageIndex.value = 0;
+                                          controller.date = null;
+                                          controller.time = null;
+                                          controller.mode = null;
                                         },
                                         child: Text(
                                           "Add Expense",
@@ -639,6 +647,12 @@ class AddComponent extends StatelessWidget {
                                               time: im.time,
                                               type: "Income");
                                           rtc.addRecentTransaction(tm);
+
+                                          incomeAmtController.clear();
+                                          incomeDescController.clear();
+                                          incomeController.date = null;
+                                          incomeController.mode = null;
+                                          incomeController.time = null;
                                         },
                                         child: Text(
                                           "Add Income",

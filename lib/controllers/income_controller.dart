@@ -31,6 +31,7 @@ class IncomeController extends GetxController {
   Future<void> deleteIncome(int id) async {
     int? res = await DataBaseHelper.dbh.deleteIncome(id);
     if (res != null) {
+      Get.back();
       fetchIncome();
       Get.snackbar("deleted", "ur data has been deleted");
     } else {

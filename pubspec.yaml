@@ -99,6 +99,7 @@ flutter:
     - asset\icons\tshirt_4715310.png
     - asset\icons\expense.png
     - asset\icons\profits.png
+    - asset\splash.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

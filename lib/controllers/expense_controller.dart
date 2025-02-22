@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class ExpenseController extends GetxController {
-
-  
   // LISTS
   List expenseCategoryImg = [
     "asset/icons/insurance_12139769.png",
@@ -107,6 +105,7 @@ class ExpenseController extends GetxController {
   void deleteExpense(int id) async {
     int? res = await DataBaseHelper.dbh.deleteExpense(id);
     if (res != null) {
+      Get.back();
       fetchExpenses();
       Get.snackbar("Deleted...", "data has benn deleted...");
     } else {
