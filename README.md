@@ -1,26 +1,26 @@
+# Budgeting App
+A simple and intuitive budgeting app that helps you track your income and expenses. With features like updating, deleting, categorizing, and viewing recent expenses, this app is designed to help you manage your finances effectively.
 
-Budgeting App
-A simple and user-friendly budgeting app that allows users to record and manage their income and expenses. With features for updating, deleting, categorizing, and tracking recent expenses, this app helps you stay on top of your finances.
+## Features
+Record Income and Expenses: Easily add your income and expenses to keep track of your finances.
+Update Entries: Modify or update previously recorded income or expense entries.
+Delete Entries: Remove incorrect or unwanted entries to maintain accurate records.
+Categorize Entries: Assign categories (e.g., Food, Rent, Entertainment, Salary) to better organize your transactions.
+View Recent Expenses: Quickly access and view the most recent entries you've recorded.
+Track Total Balance: Automatically calculate the total balance of your finances (income minus expenses).
 
-Features
-Record Income and Expenses: Easily input your income and expense details.
-Update Entries: Modify previously recorded income or expense entries.
-Delete Entries: Remove any incorrect or unwanted income or expense entries.
-Categorize Entries: Organize your expenses and income into different categories (e.g., food, rent, entertainment, salary).
-View Recent Expenses: Quickly access and view your most recent expenses.
-Track Total Balance: View the total balance of your finances, showing the sum of your income and expenses.
-
-Usage
-Open the app and start by adding your income or expenses.
-Use the update and delete buttons to modify or remove any entries.
-Categorize your entries to track them easily.
-View the most recent expenses on the main screen.
-Keep an eye on your total balance to stay within your budget!
-
-Technologies Used
+## Technologies Used
 Frontend: Flutter (with GetX for state management)
 State Management: GetX
-Database: (e.g., SQLite, Hive, or Firebase for local or cloud storage)
+Database: (e.g., SQLite, Hive, Firebase for local or cloud storage)
 UI Framework: Flutter Widgets for building the user interface
+Usage
+Open the app and begin by adding your income and expense details.
+You can update or delete entries as needed to ensure your records stay accurate.
+Organize your entries using categories for easy reference.
+The app will calculate your total balance by subtracting expenses from income.
+View recent expenses directly from the home screen to keep track of your latest transactions.
+Screenshots
+Include any relevant screenshots of your app here. You can either upload them to the repository or host them externally and include the URL.
 
-ScreenShots:
+## Example:
