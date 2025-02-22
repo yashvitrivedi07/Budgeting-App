@@ -25,6 +25,12 @@ A simple and intuitive budgeting app that helps you track your income and expens
 
 ## Example:
 
+
+https://github.com/user-attachments/assets/4b1bd65e-4026-428d-9154-ddd512e5830a
+
+
+
+
 <img src = "https://github.com/user-attachments/assets/793f3c5d-e779-436e-bb4e-498e1b78c49d" width="200">
 <img src = "https://github.com/user-attachments/assets/4a10c535-6579-41c9-b1c7-a8868a76a871" width="200">
 <img src = "https://github.com/user-attachments/assets/30004fa6-69f2-47f9-87f3-e1040b01f62e" width="200">
